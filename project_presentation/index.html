@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+
+<title>Projet-TinyBase</title>
+
+<meta name="CREATED" content="0;0">
+<meta name="CHANGEDBY" content="Silviu Maniu">
+<meta name="CHANGED" content="20101205;16143800">
+<meta name="CHANGEDBY" content="JB Griesner">
+<meta name="CHANGED" content="20141205;16143801">
+
+<style type="text/css">
+<!--
+TT.cjk { font-family: "NSimSun", monospace }
+-->
+</style>
+
+</head>
+
+<body style="direction: ltr; background-color: rgb(255, 255, 255); background-image:url(img/bg.png); background-position:left top; background-repeat:repeat;" lang="fr-FR">
+
+<p align="center">
+<br>
+</p>
+
+<p align="center">
+	<font color="#bb0000">
+		<font size="5">&nbsp;Master DataScale - Bases de Données Avancées - Projet TinyBase</font>
+	</font> 
+</p>
+
+<p align="center">
+<br>
+</p>
+
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;">
+</span>
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;">
+
+	<p>
+		<span onmouseover="_tipon(this)" onmouseout="_tipoff()">Le projet TinyBase est divisé en quatre parties:</span>
+	</p>
+</span>
+
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;">
+
+	<ol>
+
+		<li>
+
+			<p>
+				<span style="font-style: italic;">Composante Record Manager (RM)</span>: Dans cette partie vous devez implanter un ensemble de fonctions pour gérer les fichiers non-ordonnés (heap) de records (tuples). Cette composante s'appuiera sur le module Page File (PF) que nous fournissons. Le module PF gère les opérations "bas niveau" dans un fichier, à la granularité des pages (voir aussi la documentation associée, en anglais).
+			</p>
+		</li>
+		<li>
+			<p>
+				<span style="font-style: italic;">Composante Indexage (IX)</span>: Dans cette composante vous allez implanter les fonctionnalités nécessaires pour la création d’indexes sur des fichiers non-ordonnée. L’index utilisera les arbres B +. Cette composante s'appuiera sur le module PF.
+			</p>
+		</li>
+		<li>
+			<p>
+				<span style="font-style: italic;">Composante System Manager (SM)</span>: Dans cette composante vous allez implanter différentes fonctionnalités liées aux commandes DDL et au catalogue du système. La composante SM s'appuiera sur les modules précédents, RM et IX. On utilisera également un parseur pour des instructions DDL en ligne de commande, que nous fournissons.
+			</p>
+		</li>
+		<li>
+			<p>
+				<span style="font-style: italic;">Composante Query Language (QL):</span> Dans cette partie vous allez réaliser toutes les fonctionnalités nécessaires à l’exécution de requêtes SQL simples (fragment RQL ; requêtes et mises à jour). Cette composante s'appuiera sur les trois composantes précédentes et utilisera le parseur en ligne de commande que nous fournissons.
+			</p>
+		</li>
+	</ol>
+	</br></br>
+	<p>Nous vous fournirons le code pour le module Page File (PF) ainsi que pour certaines routines utilisées couramment dans d'autres composantes.<\cr> 
+	Nous allons également fournir un parseur en ligne de commande que vous utiliserez pour les parties 3 et 4 du projet.
+	</p>
+
+	<p>Les spécifications nécessaires sont données pour le code que nous fournissons, ainsi que les spécifications pour chaque composante que vous allez implanter. Ces spécifications seront données comme interfaces OO (langage C++). Nous allons vous aider à démarrer votre projet en fournissant des exemples de makefiles, des fichiers header (les point-h), etc. En outre, pour certaines parties du projet, nous fournirons des suites de tests avant la date d'échéance, même si ces tests ne seront pas exhaustifs.</p>
+	</br>
+</span>
+
+<center>
+
+<table style="width: 541px;" border="1" cellpadding="1" cellspacing="1">
+<col width="225"> <col width="111"> <col width="165"> <tbody>
+<tr>
+<th style="width: 175px;">Partie Projet</th>
+<th style="width: 175px;">
+<p style="width: 149px;">Documentation (en anglais)</p>
+</th>
+<th style="width: 175px;">
+<p>Date Limite </p>
+</th>
+</tr>
+<tr>
+<td style="width: 175px;">
+<p>Composante PF </p>
+</td>
+<td style="width: 175px;">
+<p><a href="pf.html">Documentation PF</a>
+</p>
+</td>
+<td style="width: 175px;">
+<p>fournie </p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px;">
+<p>Composante RM </p>
+</td>
+<td style="width: 175px;">
+<p><a href="rm.html">Documentation RM</a>
+</p>
+</td>
+<td style="width: 175px;">
+<p style="font-style: italic;">TO + 2 semaines</p>
+<p>session d'aide:&nbsp;</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px;">
+<p>Composante IX </p>
+</td>
+<td style="width: 175px;">
+<p><a href="ix.html">Documentation IX</a>
+</p>
+</td>
+<td style="width: 175px;">
+<p style="font-style: italic;">TO + 4 semaines</p>
+<p>session d'aide:&nbsp;</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px;">
+<p>Composante SM </p>
+</td>
+<td style="width: 175px;">
+<p><a href="sm.html">Documentation SM</a>
+</p>
+</td>
+<td style="width: 175px;">
+<p style="font-style: italic;">TO + 6 semaines</p>
+<p>session d'aide:&nbsp;</p>
+<p>Vendredi, 30 Janvier </p>
+</td>
+</tr>
+<tr>
+<td style="width: 175px;">
+<p>Composante QL</p>
+</td>
+<td style="width: 175px;">
+<p><a href="ql.html">Documentation QL</a>
+</p>
+</td>
+<td style="width: 175px;">
+<p style="font-style: italic;">TO + 8 semaines</p>
+<p></p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<p style="margin-bottom: 0cm;"><br>
+</p>
+<center>
+<table border="3" cellpadding="2" cellspacing="3" width="404">
+<col width="500"> <tbody>
+<tr>
+<th width="500">
+<p>Autres </p>
+</th>
+</tr>
+<tr>
+<td width="500">
+<p><span class="Apple-style-span" style="">  <a href="logistics.html">Logistique: Mise en place, Processus d'envoi du code, tests...</a>  
+	</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+<h1><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; font-size: medium;"><span class="Apple-style-span" style=""><b><font face="Arial">Sessions d'aide&nbsp;&nbsp; &nbsp;</font></b></span></span></h1>
+<p>Il y aura une session d'aide quelques jours avant chaque date d’échéance. Le but des séances d'aide est de discuter les décisions de conception pour chaque partie du projet et de répondre aux questions les plus fréquentes. Les séances d'aide ne sont pas obligatoires.
+</p>
+<a name="contest2"></a>
+<h1><small><small><small><font face="Arial"><b>Machines Linux</b></font></small></small></small></h1>
+<p>Vous allez implanter TinyBase en sachant que votre code sera testé en utilisant les machines Linux en salle C133. Les séances d’aide se dérouleront en salle C133. Pour les instructions concernant la compilation et les tests voir le document de logistique.
+</p>
+<h1><small><small><small><font face="Arial"><b>Plus sur la documentation</b></font></small></small></small></h1>
+<!-- <p>Pour le projet RedBase (du quel TinyBase s’inspire), voir la <a href="http://infolab.stanford.edu/%7Ehyunjung/cs346/">page</a> du projet.
+</p> --!>
+
+<p style="margin-bottom: 0cm;"><span style="font-weight: bold;">Remerciements</span>:&nbsp;projet&nbsp;inspiré par RedBase (Stanford), code source provenant de ce projet (auteurs: Jennifer Widom et équipe).</p>
+
+
+</body></html>
